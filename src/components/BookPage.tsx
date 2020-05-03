@@ -1,7 +1,9 @@
-import React from 'react'
+import * as React from 'react'
+
 
 let BookPage:React.FC = ()=>{
-    return(<div>
+    // @ts-ignore
+    return(<div height="100%">
         <p className="text-center">{}</p>
         <div className="w-1/2">
             <img/>

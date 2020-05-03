@@ -1,15 +1,17 @@
 import {FETCH_POPULAR_BOOKS} from "../actions/ActionTypes";
-export interface PopularBooksType{
-    coverUrls:Array<string>
+export interface PopularBooksType {
+    coverUrls: string
+    id: number
 }
-let initialState:PopularBooksType ={coverUrls:[]}
-let PopularReducer = (state=initialState,action)=>{
+export interface BooksActionType{
+    type:string
+    payload:Array<PopularBooksType>
+}
+let initialState:Array<PopularBooksType> =[]
+let PopularReducer = (state=initialState,action:BooksActionType)=>{
     switch (action.type) {
         case  FETCH_POPULAR_BOOKS:{
-            return{
-                ...state,
-                coverUrls:action.payload
-            }
+            return [...state,...action.payload]
         }
         default:return state
     }

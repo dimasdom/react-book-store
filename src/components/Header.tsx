@@ -1,4 +1,4 @@
-import React from 'react'
+import * as React from 'react'
 import { Link } from '@reach/router'
 
 
@@ -10,3 +10,4 @@ let Header:React.FC = () =>{
         </div>
     )
 }
+export default Header

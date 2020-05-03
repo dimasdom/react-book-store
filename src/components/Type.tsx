@@ -1,5 +1,6 @@
-import React, {useState} from 'react'
+import  {useState} from 'react'
 import { Link } from '@reach/router'
+import * as React from "react";
 interface BookType {
     book:string
     coverUrl:string
@@ -17,17 +18,17 @@ let Type:React.FC = ()=>{
         <p>What popular now:</p>
         <div>
         {
-            Popular!.map(pop=>{
-                    return(<Book book={pop.name} coverUrl={pop.coverUrl}/>)
-            })
+         //   Popular!.map(pop=>{
+           //         return(<Book book={pop.name} coverUrl={pop.coverUrl}/>)
+            //})
         }
         </div>
         <p>Classic</p>
         <div>
             {
-                Classic!.map(pop=>{
-                    return(<Book book={pop.name} coverUrl={pop.coverUrl}/>)
-                })
+             //   Classic!.map(pop=>{
+               //     return(<Book book={pop.name} coverUrl={pop.coverUrl}/>)
+                //})
             }
         </div>
     </div>)

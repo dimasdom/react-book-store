@@ -1,10 +1,16 @@
 import {createStore,combineReducers,applyMiddleware} from 'redux'
 import { composeWithDevTools } from "redux-devtools-extension";
-import {thunk} from "redux-thunk";
+import PopularReducer from "./reducers/PopularBooksReducer";
+import ClassicReducer from "./reducers/ClassicBooksReducer";
+import BookReducer from "./reducers/BookReducer";
+import CartReducer from "./reducers/CartReducer";
+import thunk from "redux-thunk";
 let state = createStore(combineReducers({
-    Popular:
-    Classic:
-    Book:
-    Cart:
+    Popular:PopularReducer,
+    Classic:ClassicReducer,
+    Book:BookReducer,
+    Cart:CartReducer
 
 }),composeWithDevTools(applyMiddleware(thunk)))
+
+export default state

@@ -1,3 +1,6 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
 .FictionBack {
   background-image: url("https://www.sciencemag.org/sites/default/files/styles/article_main_large/public/WL_FlyingH.jpg?itok=uJ3BKhho");
 }

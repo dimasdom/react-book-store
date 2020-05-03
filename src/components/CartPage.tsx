@@ -1,4 +1,4 @@
-import React from 'react'
+import * as React from 'react'
 
 interface BookRowType{
     coverUrl:string
@@ -17,13 +17,16 @@ let BookRow:React.FC<BookRowType> =({coverUrl,name,count,price})=>{
 }
 
 let CartPage:React.FC = ()=>{
+    //let Cart:Array<any> = []
     return(<div>
-        {Cart!.map(elem=>{
-            return(<BookRow coverUrl={elem.url} name={elem.name} count={elem.count} price={elem.price}/>)
-        })}
+        <p>
+
+        </p>
         <div className="flex-row">
             <p>Total Price:{}</p>
             <button>Make Order</button>
         </div>
     </div>)
 }
+
+export default  CartPage
